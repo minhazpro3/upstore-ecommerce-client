@@ -4,6 +4,9 @@ module.exports = {
 
   theme: {
     extend: {},
+    fontFamily: {
+      amaranth: ["Amaranth", "sans-serif"],
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
