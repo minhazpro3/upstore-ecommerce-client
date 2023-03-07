@@ -42,7 +42,7 @@ const Banner = () => {
               </a>
             </div>
           </div>
-          {/* <div id="slide2" className="carousel-item relative w-full">
+          <div id="slide2" className="carousel-item relative w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center sm:px-20 md:px-28 gap-2 ">
               <div>
                 <h2 className="text-white text-4xl md:text-6xl font-bold font-amaranth  my-10 md:mb-14 md:my-0">
@@ -70,14 +70,14 @@ const Banner = () => {
               </div>
             </div>
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/3 md:top-1/2 mb-16 md:mb-0">
-              <a href="#slide1" className="btn btn-circle">
+              <a href="#slide2" className="btn btn-circle">
                 ❮
               </a>
-              <a href="#slide2" className="btn btn-circle">
+              <a href="#slide1" className="btn btn-circle">
                 ❯
               </a>
             </div>
-          </div> */}
+          </div>
 
           {/* <div id="slide2" className="carousel-item relative w-full">
           <img

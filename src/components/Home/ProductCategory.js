@@ -23,12 +23,10 @@ const ProductCategory = () => {
       title: "Music & Audio",
     },
   ];
-  //
-  //
-  //
-  //
+
   return (
     <div className="container relative mx-auto px-8 md:px-0 my-14">
+      <h3 className="text-6xl text-center font-amaranth">Product Categories</h3>
       <div className=" relative">
         {" "}
         <div className=" absolute flex justify-end gap-3 transform -translate-y-1/2 left-5 right-5 top-1/3 md:top-1/2 mb-16 md:mb-0">
@@ -40,7 +38,7 @@ const ProductCategory = () => {
           </a>
         </div>
       </div>
-      <div className="carousel w-full absolute top-6  ">
+      <div className="carousel w-full absolute top-16 md:top-28  ">
         <div id="slide6" className="carousel-item flex justify-center  w-full ">
           <div className="grid grid-cols-1 md:grid-cols-4  gap-8">
             {products.map((product) => (
