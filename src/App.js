@@ -1,12 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Button } from "react-daisyui";
 import { Home } from "./pages/Home/Home";
+import Footer from "./components/Home/Shared/Footer";
+
 
 function App() {
   return (
-    <div className=" ">
-      <Home />
+    <div className="">
+      <Home/>
+      <Footer/>
     </div>
   );
 }

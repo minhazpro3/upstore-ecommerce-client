@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+p{
+    text-align: justify;
+}
+
+.border-color-style{
+    border: 1px solid #FFCA61
+  
+    
+}
