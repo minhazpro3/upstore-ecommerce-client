@@ -1,11 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { Button } from "react-daisyui";
+import { Home } from "./pages/Home/Home";
 
 function App() {
   return (
     <div className=" ">
-      <button className="btn btn-primary  ">Button s</button>
+      <Home />
     </div>
   );
 }
