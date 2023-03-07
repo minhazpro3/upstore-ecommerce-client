@@ -12,3 +12,17 @@ p{
   
     
 }
+.box-edit img{
+    border:1px solid black;
+    background-color: beige;
+    border-radius: 50px;
+    padding: 3px;
+}
+.hot-button-style{
+    background-color: #FF630C;
+
+
+}
+.hot-color{
+    color:#FF630C
+}
