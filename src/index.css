@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* mozahid css for home page */
 p{
     text-align: justify;
 }
@@ -25,4 +25,16 @@ p{
 }
 .hot-color{
     color:#FF630C
+}
+/* mozahid css for home page */
+
+.hot-button-style2{
+    background-color:#FFCE1F
+}
+
+
+.hot-button-style3{
+    background-color: #FF0000;
+
+
 }

@@ -15,7 +15,7 @@ const RecentlyAdded = () => {
                     </figure>
                     <div className="px-6">
                        <h1 className='font-bold text-2xl'>iPhone 14 pro max </h1>
-                        <p className='py-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
+                        <p className='py-2'>Lorem ipsum dolor sit am</p>
                         <div className="flex justify-end">
                             <h1 className='mx-1'>$32</h1>
                             <h1 className='mx-1 font-bold hot-color'>$75</h1>
