@@ -81,12 +81,12 @@ const AddToCartVerified = () => {
           </div>
         </section>
 
-        <section>
-          <main className="flex gap-10">
-            <div>
+        <section className="">
+          <main className="flex flex-col justify-between sm:flex-row gap-10">
+            <div className="sm:w-1/2 md:w-full">
               <p className="font-bold text-center">Skyline Store</p>
 
-              <div className="flex gap-6 pt-5">
+              <div className="flex justify-between gap-6 pt-5">
                 <div className="self-end">
                   <p>
                     <span className="text-2xl font-semibold">4.9 </span>
@@ -108,12 +108,12 @@ const AddToCartVerified = () => {
               </div>
             </div>
 
-            <div>
+            <div className="sm:w-1/2 md:w-full">
               <p className="font-bold text-xs w-max border-b-[1px] border-black">
                 Store information
               </p>
 
-              <div className="pt-5 w-full xl:w-full md:w-48 sm:w-48">
+              <div className="">
                 <progress
                   className="progress progress-warning"
                   value="0"
@@ -143,9 +143,7 @@ const AddToCartVerified = () => {
             </div>
           </main>
 
-          <div>
-            
-          </div>
+          <div></div>
         </section>
       </main>
     </div>
