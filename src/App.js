@@ -1,11 +1,19 @@
-import logo from "./logo.svg";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import { Button } from "react-daisyui";
+import AddToCartVerified from "./pages/AddToCartVerified/AddToCartVerified";
 
 function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: '/cart',
+      element: <AddToCartVerified></AddToCartVerified>
+    }
+  ])
+
   return (
-    <div className=" ">
-      <button className="btn btn-primary  ">Button s</button>
+    <div className="App">
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
