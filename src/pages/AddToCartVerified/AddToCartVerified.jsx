@@ -1,5 +1,7 @@
 import React from "react";
 import { AiFillHeart } from "react-icons/ai";
+import badge from "./img/badge 1.png";
+import truck from './img/truck.png'
 
 const AddToCartVerified = () => {
   const star = (
@@ -119,7 +121,7 @@ const AddToCartVerified = () => {
           </section>
         </div>
 
-        <div className="flex-1 w-max">
+        <div className="flex-1">
           <main className="flex gap-4 justify-between items-baseline">
             <section className="flex flex-col gap-2 sm:gap-4 w-full">
               <p className="font-bold text-center underline">Skyline Store</p>
@@ -148,6 +150,40 @@ const AddToCartVerified = () => {
                 Information
               </p>
               <div>{progress}</div>
+            </section>
+          </main>
+
+          <main className="mt-5 p-2 bg-[#FBFAFA] flex flex-wrap gap-4">
+            <section className="items-center flex flex-col justify-between border-r pr-2 pt-3 pb-1 flex-auto">
+              <p className="font-[Poppins] font-semibold text-xs">
+                Product Status
+              </p>
+              <div
+                className="radial-progress text-[#3C7FEB] font-[Poppins] text-xs"
+                style={{ "--value": 100, "--size": "3rem" }}
+              >
+                <span className="font-semibold text-black">100%</span>
+              </div>
+              <p className="text-xs opacity-40">Excellent</p>
+            </section>
+
+            <section className="items-center flex flex-col justify-between border-r pr-2 pt-3 pb-1 ">
+              <p className="font-[Poppins] font-semibold text-xs">
+                Verified by us
+              </p>
+              <p className="text-xs opacity-40">1 month Warranty</p>
+              <img className="w-12 mx-1 my-2" src={badge} alt="" />
+              <p className="text-xs opacity-40">
+                This Product has been <br /> VERIFIED by an Expert
+              </p>
+            </section>
+
+            <section className="items-center flex flex-col justify-between pt-3 pb-1 flex-auto">
+              <p className="font-[Poppins] font-semibold text-xs">
+                Est. Delivery Day
+              </p>
+              <img className="w-16 mx-auto my-3" src={truck} alt="" />
+              <p className="text-xs opacity-40">3 - 5 Business days</p>
             </section>
           </main>
         </div>
