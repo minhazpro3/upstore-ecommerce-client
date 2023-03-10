@@ -3,7 +3,7 @@ import { AiFillHeart } from "react-icons/ai";
 
 const AddToCartVerified = () => {
   const star = (
-    <div className="rating rating-sm space-x-1">
+    <div className="rating rating-xs space-x-1">
       <input
         type="radio"
         name="rating-6"
@@ -33,7 +33,12 @@ const AddToCartVerified = () => {
   );
 
   const progress = (
-    <div className="space-y-3.5">
+    <div className="text-xs">
+      <progress
+        className="progress progress-warning"
+        value="0"
+        max="100"
+      ></progress>
       <progress
         className="progress progress-warning"
         value="10"
@@ -59,15 +64,15 @@ const AddToCartVerified = () => {
 
   return (
     <div className="bg-gray-200 h-screen p-4">
-      <main className="bg-white py-10 px-4 flex justify-between flex-wrap gap-8">
-        
-        <div>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, eius.
+      <main className="bg-white py-10 px-4 flex flex-wrap gap-8">
+        <div className="flex-1">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero,
+          eius.
         </div>
-        
-        <div>
+
+        <div className="flex-1">
           <section>
-            <div className="flex justify-between gap-4">
+            <div className="flex gap-2 sm:gap-4 w-max">
               <p className="text-xs bg-[#FFC900] rounded-xl px-2.5 py-0.5">
                 -10%
               </p>
@@ -90,14 +95,14 @@ const AddToCartVerified = () => {
                 6.7" Super Retina OLED
               </small>
 
-              <div className="flex pt-4">
-                <span className="font-bold mr-6">$ 799.2</span>
+              <div className="flex pt-4 gap-5">
+                <span className="font-bold">$ 799.2</span>
                 <span className="opacity-40 line-through">$ 999.0</span>
               </div>
 
-              <div className="pt-5">
+              <div className="pt-5 flex gap-6">
                 <button
-                  className="btn btn-sm text-xs px-5 rounded-lg border-none  mr-6"
+                  className="btn btn-sm text-xs px-5 rounded-lg border-none"
                   style={{ background: "rgba(12, 182, 255, 0.84)" }}
                 >
                   Buy Now
@@ -114,11 +119,11 @@ const AddToCartVerified = () => {
           </section>
         </div>
 
-        <div>
-          <main className="flex gap-6 justify-between">
-            <section>
-              <p className="font-bold text-center">Skyline Store</p>
-              <div className="flex gap-4 justify-between pt-3">
+        <div className="flex-1 w-max">
+          <main className="flex gap-4 justify-between items-baseline">
+            <section className="flex flex-col gap-2 sm:gap-4 w-full">
+              <p className="font-bold text-center underline">Skyline Store</p>
+              <div className="flex gap-3 justify-between ">
                 <div className="self-end">
                   <p>
                     <span className="text-2xl font-semibold">4.9 </span>
@@ -138,11 +143,11 @@ const AddToCartVerified = () => {
               </div>
             </section>
 
-            <section>
-              <p className="font-bold text-xs border-b-2 border-black">
-                Store information
+            <section className="flex flex-col gap-2 sm:gap-4 w-full">
+              <p className="font-bold text-xs underline text-center">
+                Information
               </p>
-              <div className="pt-3">{progress}</div>
+              <div>{progress}</div>
             </section>
           </main>
         </div>
